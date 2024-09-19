@@ -1,29 +1,56 @@
+```markdown
 # ListApp
 
-Create simple UI along with Bootstrap
+## Overview
+ListApp is a simple web application designed to provide an interactive user interface for selecting fruits using checkboxes. Built with Angular and styled using Bootstrap, it allows users to move selected fruits from one box to another seamlessly.
 
-- The UI should have two boxes
-- One box should minimum 5 checkboxes with fruit name one by one
-- The other box should be initially empty
-- When user clicks on any fruit from first box, it should get removed from that box and should show in another box
+## Technologies Used
+- **Frontend**: Angular (version 9.1.14), Typescript, Bootstrap (CSS)
+- **Backend**: Not applicable for this project (Frontend only)
+- **Database**: Not applicable (No SQL integration in this version)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.14.
+## Features
+- User-friendly interface with two boxes:
+  - The first box contains a list of fruits represented as checkboxes.
+  - The second box is initially empty and populates with selected fruits.
+- Dynamic interaction: When a user clicks on a fruit name, it moves from the first box to the second.
 
-## Development server
+## Installation
+To set up the project locally, follow these steps:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd list-app
+   ```
+3. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
+
+## Development Server
+Run the following command to start a development server:
+```bash
+ng serve
+```
+Navigate to `http://localhost:4200/` in your browser. The app will automatically reload if you make changes to any source files.
 
 ## File Structure
-
-- list-app/src/app - Project Directory
-- list-app/src/app/app.component.html - Presentation file
-- list-app/src/app/app.component.ts - Business Logic
-- list-app/src/app/app.component.css - CSS Stylesheet
+```
+list-app/
+└── src/
+    └── app/
+        ├── app.component.html   # Presentation file
+        ├── app.component.ts      # Business Logic
+        └── app.component.css     # CSS Stylesheet
+```
 
 ## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To build the project for production, use the following command:
+```bash
+ng build --prod
+```
+The build artifacts will be stored in the `dist/` directory.
